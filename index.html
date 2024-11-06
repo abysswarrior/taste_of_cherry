@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychology Help Center</title>
+    <!-- Add Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Add Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">
+            <span class="logo-text">Taste of Cherry</span>
+            <div class="cherry-dot"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </nav>
+        <div class="language-selector">
+            <select id="language-selector">
+                <option value="en">English</option>
+                <option value="fa">فارسی</option>
+            </select>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Professional Mental Health Support When You Need It Most</h1>
+                <p>24/7 Access to Licensed Therapists and Mental Health Professionals</p>
+
+                <div class="hero-buttons">
+                    <a href="#reservation-form" class="btn primary">
+                        <i class="fas fa-calendar-alt"></i>
+                        Book a Session
+                    </a>
+                    <a href="#services" class="btn secondary">
+                        <i class="fas fa-info-circle"></i>
+                        Learn More
+                    </a>
+                </div>
+
+                <div class="emergency-contact">
+                    <h2>Need Immediate Help?</h2>
+                    <div class="contact-buttons">
+                        <a href="tel:18001234567" class="btn primary">
+                            <i class="fas fa-phone"></i>
+                            1-800-123-4567
+                        </a>
+                        <a href="#chat" class="btn secondary" id="emergency-chat-btn">
+                            <i class="fas fa-comments"></i>
+                            Start Emergency Chat
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservation-form">
+        <div class="container">
+            <h2>Book a Therapy Session</h2>
+            <form id="therapy-form">
+                <div class="form-group">
+                    <label for="problem-type">Type of Concern:</label>
+                    <select name="problem-type" id="problem-type" required>
+                        <option value="">Select your concern</option>
+                        <option value="suicidal-thoughts">Suicidal Thoughts</option>
+                        <option value="psychosis">Psychosis</option>
+                        <option value="schizophrenia">Schizophrenia</option>
+                        <option value="ptsd">PTSD</option>
+                        <option value="anxiety">Anxiety</option>
+                        <option value="depression">Depression</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="preferred-time">Preferred Contact Time:</label>
+                        <input type="time" id="preferred-time" name="preferred-time">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="description">Brief Description:</label>
+                    <textarea id="description" name="description" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn primary">Submit Request</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-user-friends"></i>
+                    <h3>Individual Therapy</h3>
+                    <p>One-on-one sessions with licensed therapists</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Group Therapy</h3>
+                    <p>Supportive group sessions with peers</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Crisis Intervention</h3>
+                    <p>24/7 emergency support</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-video"></i>
+                    <h3>Online Counseling</h3>
+                    <p>Virtual therapy sessions from comfort of home</p>
+                </div>
+            </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2>Client Testimonials</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial">
+                    <p>"The support I received here changed my life. I'm forever grateful."</p>
+                    <span class="author">- Anonymous</span>
+                </div>
+                <!-- More testimonials would be added here -->
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: help@psychcenter.com</p>
+                <p>Phone: 1-800-123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Psychology Help Center. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<div id="chat-widget" class="chat-widget">
+    <div class="chat-header">
+        <h3>Chat with a Doctor</h3>
+        <button id="close-chat"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="chat-messages">
+        <!-- Messages will be inserted here -->
+    </div>
+    <div class="chat-input">
+        <input type="text" placeholder="Type your message...">
+        <button><i class="fas fa-paper-plane"></i></button>
+    </div>
+</div>
+<button id="chat-button" class="chat-button">
+    <i class="fas fa-comments"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>

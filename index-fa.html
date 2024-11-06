@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مرکز مشاوره روانشناسی</title>
+    <!-- Add Vazirmatn font for Persian text -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet"
+          type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-rtl.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">
+            <span class="logo-text">طعم گیلاس</span>
+            <div class="cherry-dot"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">خانه</a></li>
+                <li><a href="#about">درباره ما</a></li>
+                <li><a href="#services">خدمات</a></li>
+                <li><a href="#resources">منابع</a></li>
+            </ul>
+        </nav>
+        <div class="language-selector">
+            <select id="language-selector">
+                <option value="fa">فارسی</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- Persian version of hero section -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>پشتیبانی تخصصی سلامت روان در زمان نیاز شما</h1>
+                <p>دسترسی ۲۴ ساعته به روانشناسان و متخصصان سلامت روان</p>
+
+                <div class="hero-buttons">
+                    <a href="#reservation-form" class="btn primary">
+                        <i class="fas fa-calendar-alt"></i>
+                        رزرو جلسه
+                    </a>
+                    <a href="#services" class="btn secondary">
+                        <i class="fas fa-info-circle"></i>
+                        اطلاعات بیشتر
+                    </a>
+                </div>
+
+                <div class="emergency-contact">
+                    <h2>نیاز به کمک فوری دارید؟</h2>
+                    <div class="contact-buttons">
+                        <a href="tel:02112345678" class="btn primary">
+                            <i class="fas fa-phone"></i>
+                            ۰۲۱-۱۲۳۴۵۶۷۸
+                        </a>
+                        <a href="#chat" class="btn secondary" id="emergency-chat-btn">
+                            <i class="fas fa-comments"></i>
+                            شروع گفتگوی اضطراری
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservation-form">
+        <div class="container">
+            <h2>رزرو جلسه مشاوره</h2>
+            <form id="therapy-form">
+                <div class="form-group">
+                    <label for="problem-type">نوع مشکل:</label>
+                    <select name="problem-type" id="problem-type" required>
+                        <option value="">انتخاب کنید</option>
+                        <option value="suicidal-thoughts">افکار خودکشی</option>
+                        <option value="psychosis">سایکوز</option>
+                        <option value="schizophrenia">اسکیزوفرنی</option>
+                        <option value="ptsd">اختلال استرس پس از سانحه</option>
+                        <option value="anxiety">اضطراب</option>
+                        <option value="depression">افسردگی</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">نام و نام خانوادگی:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">ایمیل:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">شماره تماس:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="preferred-time">زمان ترجیحی تماس:</label>
+                        <input type="time" id="preferred-time" name="preferred-time">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="description">توضیح مختصر:</label>
+                    <textarea id="description" name="description" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn primary">ارسال درخواست</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>خدمات ما</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-user-friends"></i>
+                    <h3>مشاوره فردی</h3>
+                    <p>جلسات خصوصی با روانشناسان مجرب</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-users"></i>
+                    <h3>مشاوره گروهی</h3>
+                    <p>جلسات گروهی با حضور افراد مشابه</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>مداخله در بحران</h3>
+                    <p>پشتیبانی ۲۴ ساعته در شرایط اضطراری</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-video"></i>
+                    <h3>مشاوره آنلاین</h3>
+                    <p>جلسات مجازی در محیط امن منزل</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2>نظرات مراجعین</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial">
+                    <p>"خدمات این مرکز زندگی من را تغییر داد. همیشه قدردان خواهم بود."</p>
+                    <span class="author">- ناشناس</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>دسترسی سریع</h3>
+                <ul>
+                    <li><a href="#about">درباره ما</a></li>
+                    <li><a href="#services">خدمات</a></li>
+                    <li><a href="#contact">تماس با ما</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>اطلاعات تماس</h3>
+                <p>ایمیل: help@psychcenter.com</p>
+                <p>تلفن: ۰۲۱-۱۲۳۴۵۶۷</p>
+            </div>
+            <div class="footer-section">
+                <h3>ما را دنبال کنید</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© ۱۴۰۳ مرکز مشاوره روانشناسی. تمامی حقوق محفوظ است.</p>
+        </div>
+    </div>
+</footer>
+
+<div id="chat-widget" class="chat-widget">
+    <div class="chat-header">
+        <h3>گفتگو با مشاور</h3>
+        <button id="close-chat"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="chat-messages">
+        <!-- Messages will be inserted here -->
+    </div>
+    <div class="chat-input">
+        <input type="text" placeholder="پیام خود را بنویسید...">
+        <button><i class="fas fa-paper-plane"></i></button>
+    </div>
+</div>
+<button id="chat-button" class="chat-button">
+    <i class="fas fa-comments"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
